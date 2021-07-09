@@ -14,3 +14,6 @@ POST
 For example:        
 ab -n 100 -c 10 -p ./inputFiles/create.json -T application/json http://dummy.restapiexample.com/api/v1/create
 
+To generate a file which contains results of your test, append ` > path_to_output_file`     
+For example:        
+ab -n 100 -c 10 http://dummy.restapiexample.com/api/v1/employees > ./outputFiles/getEmployees.txt
